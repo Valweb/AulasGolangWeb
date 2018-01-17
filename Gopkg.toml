@@ -1,3 +1,20 @@
+
+#criar o required para apontar para o endereço github.com/labstack/echo. Esse required tenha ferramentas que o Go provem.
+required = [github.com/labstack/echo]
+
+
+#Depois de criar a importação do pacote labstack no arquivo main, devemos especificar aqui o endereço do pacote(name) 
+#e a versão do pacote
+
+[[constraint]]
+name = "github.com/labstack/echo"
+version= "3.2.1" 
+#basta ir no github e ver em lançamentos a última versão
+
+
+
+
+
 # Gopkg.toml example
 #
 # Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md

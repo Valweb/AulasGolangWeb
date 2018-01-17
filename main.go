@@ -8,7 +8,7 @@ import (
 )
 
 /*
-Primeira forma de afzer um callback
+Primeira forma de fazer  um callback
 func main() {
 	e := echo.New()
 	//criar uma rota para fazer uma requisição para o provedor

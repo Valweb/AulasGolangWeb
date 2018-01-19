@@ -1,9 +1,7 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/labstack/echo"
+	r "github.com/Valweb/AulasGolangWeb/routers"
 	_ "github.com/labstack/echo"
 )
 
@@ -24,12 +22,5 @@ func main() {
 
 //Segunda forma de fazer um callback
 func main() {
-	e := echo.New()
-	e.GET("/", home)
-	e.Start(":3000")
-}
-
-func home(c echo.Context) error {
-
-	return c.String(http.StatusOK, "Hello, World! GO GO")
+	r.App.Start(":3000")
 }

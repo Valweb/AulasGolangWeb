@@ -10,7 +10,8 @@ name = "github.com/labstack/echo"
 version= "3.2.1" 
 #basta ir no github e ver em lançamentos a última versão
 
-
+[[constraint]]
+name = "github.com/labstack/echo/middleware"
 
 
 //Exemplos

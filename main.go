@@ -30,6 +30,6 @@ func main() {
 }
 
 func home(c echo.Context) error {
-	//variavel será tipo context
+
 	return c.String(http.StatusOK, "Hello, World! GO GO")
 }

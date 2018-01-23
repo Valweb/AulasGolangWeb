@@ -10,6 +10,6 @@ import (
 func main() {
 	e := r.App
 
-	e.Use(middleware.Logger()) //Cada requisição ele estará exibindo no formato de log no terminal.
+	e.Use(middleware.Logger()) //Cada requisição ele estará exibindo no formato de log no terminal a requisição do usuário.
 	e.Logger.Fatal(e.Start(":3000"))
 }

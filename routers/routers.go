@@ -1,8 +1,7 @@
 package routers
 
 import (
-	"net/http"
-
+	"github.com/Valweb/AulasGolangWeb/controllers"
 	"github.com/labstack/echo"
 )
 
@@ -12,10 +11,6 @@ var App *echo.Echo
 func init() {
 	App = echo.New()
 
-	App.GET("/", home)
-}
-
-func home(c echo.Context) error {
-
-	return c.String(http.StatusOK, "Hello, World! GO GO")
+	//Nossas Rotas
+	App.GET("/", controllers.Home)
 }

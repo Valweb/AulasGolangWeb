@@ -1,38 +1,4 @@
 
-#criar o required para apontar para o endereço github.com/labstack/echo. Esse required tenha ferramentas que o Go provem.
-required = [github.com/labstack/echo]
-
-#Depois de criar a importação do pacote labstack no arquivo main, devemos especificar aqui o endereço do pacote(name) 
-#e a versão do pacote
-
 [[constraint]]
-name = "github.com/labstack/echo"
-version= "3.2.1" 
-#basta ir no github e ver em lançamentos a última versão
-
-[[constraint]]
-name = "github.com/labstack/echo/middleware"
-
-
-//Exemplos
-# Gopkg.toml example
-#
-# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
-# for detailed Gopkg.toml documentation.
-#
-# required = ["github.com/user/thing/cmd/thing"]
-# ignored = ["github.com/user/project/pkgX", "bitbucket.org/user/project/pkgA/pkgY"]
-#
-# [[constraint]]
-#   name = "github.com/user/project"
-#   version = "1.0.0"
-#
-# [[constraint]]
-#   name = "github.com/user/project2"
-#   branch = "dev"
-#   source = "github.com/myfork/project2"
-#
-# [[override]]
-#  name = "github.com/x/y"
-#  version = "2.4.0"
-
+  name = "github.com/dgrijalva/jwt-go"
+  version = "3.1.0"
